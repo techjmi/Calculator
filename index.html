@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Simple Calculator</title>
+</head>
+<body>
+   <!-- ... previous HTML code ... -->
+
+<div class="calculator">
+    <input type="text" id="display" readonly>
+    <div class="buttons">
+        <button class="number" onclick="appendToDisplay('7')">7</button>
+        <button class="number" onclick="appendToDisplay('8')">8</button>
+        <button class="number" onclick="appendToDisplay('9')">9</button>
+        <button class="operator" onclick="appendToDisplay('+')">+</button>
+        <button class="number" onclick="appendToDisplay('4')">4</button>
+        <button class="number" onclick="appendToDisplay('5')">5</button>
+        <button class="number" onclick="appendToDisplay('6')">6</button>
+        <button class="operator" onclick="appendToDisplay('-')">-</button>
+        <button class="number" onclick="appendToDisplay('1')">1</button>
+        <button class="number" onclick="appendToDisplay('2')">2</button>
+        <button class="number" onclick="appendToDisplay('3')">3</button>
+        <button class="operator" onclick="appendToDisplay('*')">*</button>
+        <button class="number" onclick="appendToDisplay('0')">0</button>
+        <button class="function" onclick="calculateTrigFunction('sin')">sin</button>
+        <button class="function" onclick="calculateTrigFunction('cos')">cos</button>
+        <button class="operator" onclick="appendToDisplay('/')">/</button>
+        <button class="function" onclick="calculateTrigFunction('tan')">tan</button>
+        <button class="function" onclick="calculateLog()">log</button>
+        <button class="function" onclick="calculateSquare()">x^2</button>
+        <button class="equals" onclick="calculate()">=</button>
+        <button class="function" onclick="calculateSquareRoot()">√</button>
+        <button class="function" onclick="calculateFactorial()">!</button>
+        <button class="delete" onclick="deleteLastCharacter()">⌫</button>
+        <button class="clear" onclick="clearDisplay()">C</button>
+    </div>
+   
+</div>
+
+<!-- ... rest of your HTML ... -->
+
+    <script src="script.js"></script>
+</body>
+</html>
